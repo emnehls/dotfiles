@@ -5,7 +5,6 @@
 - clean: ['~']
 
 - link:
-    ~/src/dotfiles: ''
     ~/.vimrc: 
       force: true
       path: vimrc
