@@ -11,5 +11,7 @@
     ~/.bashrc: 
       force: true
       path: bashrc
+    ~/.gitconfig:
+      path: gitconfig
 - shell:
     - [git submodule update --init --recursive, Installings submodules]
