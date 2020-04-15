@@ -33,3 +33,8 @@ nnoremap <Right> :echo "Use l"<CR>
 nnoremap <Up> :echo "Use k"<CR>
 nnoremap <Down> :echo "Use j"<CR>
 
+"set tab width to 4 spaces
+set tabstop=4
+
+"set autoindent to on - there may be better ways to do this 04152020
+set autoindent

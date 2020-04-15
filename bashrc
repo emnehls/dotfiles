@@ -141,3 +141,7 @@ ex ()
 # My custom aliases
 alias rstudio="rstudio-bin"
 alias v="vim"
+
+## My custom settings
+## set the type mode to vi
+set -o vi
