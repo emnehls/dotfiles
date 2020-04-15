@@ -1,3 +1,14 @@
 [user]
 	name = emnehls
 	email = emnehls@wustl.edu
+[core]
+	editor = vim 
+[alias]
+	st = status
+	cm = commit -m
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[github]
+	name = emnehls
