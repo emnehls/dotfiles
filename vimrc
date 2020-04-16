@@ -1,4 +1,25 @@
 " emnehls .vimrc last updated 04102020
+
+" Installation of vim-plug with plugins
+" This is kinda risky because it silently curls from this dude's github
+" I am doing this because I'm lazy and it will make it easier to set up on
+" each system. May consider commenting out after initial install...
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'https://github.com/preservim/nerdtree'
+Plug 'https://github.com/vim-latex/vim-latex'
+call plug#end()
+
+"Setting some settings for vim-latex
+filetype plugin on
+filetype indent on
+let g:tex_flavor='latex'
 "set compatible to vi to no so that vim functions like a modern editor
 set nocompatible
 

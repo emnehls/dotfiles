@@ -5,6 +5,9 @@
 - clean: ['~']
 
 - link:
+    ~/.vim:
+      force: true
+      path: vim
     ~/.vimrc: 
       force: true
       path: vimrc
