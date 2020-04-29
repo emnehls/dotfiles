@@ -144,4 +144,7 @@ alias v="vim"
 
 ## My custom settings
 ## set the type mode to vi
-set -o vi
+#set -o vi
+
+## My custom paths
+export PATH="${PATH}:${HOME}/.local/bin/"

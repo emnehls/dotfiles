@@ -13,7 +13,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/preservim/nerdtree'
-Plug 'https://github.com/vim-latex/vim-latex'
+Plug 'https://gitbub.com/junegunn/goyo.vim'
+" Plug 'https://github.com/vim-latex/vim-latex'
 call plug#end()
 
 "Setting some settings for vim-latex
@@ -59,3 +60,17 @@ set tabstop=4
 
 "set autoindent to on - there may be better ways to do this 04152020
 set autoindent
+
+"some commands to allow me to make latex and R markdown files in vim
+"spellcheck
+map <leader>sp :setlocal spell! spelling=en_us<CR>
+"compiler
+map <leader>c :w! \| !compiler <c-r>%<CR>
+map <leader>p :!opout <c-r>%<CR><CR>
+autocmd BufRead,BufNewFile *tex set filetype=tex
+
+" Making an IDE for LaTeX
+inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
+" autocmd FileType tex inoremap ;Sec \section{<++>}
+" Spellcheck to leader s (\s)
+map <leader>s :setlocal spell! spelllang=en_us<CR>
