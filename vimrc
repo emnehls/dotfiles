@@ -62,8 +62,8 @@ set tabstop=4
 set autoindent
 
 "some commands to allow me to make latex and R markdown files in vim
-"spellcheck
-map <leader>sp :setlocal spell! spelling=en_us<CR>
+"spellcheck to leader (slash) s
+map <leader>s :setlocal spell! spelling=en_us<CR>
 "compiler
 map <leader>c :w! \| !compiler <c-r>%<CR>
 map <leader>p :!opout <c-r>%<CR><CR>
@@ -72,5 +72,3 @@ autocmd BufRead,BufNewFile *tex set filetype=tex
 " Making an IDE for LaTeX
 inoremap <Space><Space> <Esc>/<++><Enter>"_c4l
 " autocmd FileType tex inoremap ;Sec \section{<++>}
-" Spellcheck to leader s (\s)
-map <leader>s :setlocal spell! spelllang=en_us<CR>
