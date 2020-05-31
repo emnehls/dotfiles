@@ -14,5 +14,8 @@
     ~/.gitconfig:
       force: false
       path: gitconfig
+    ~/.tmux.conf:
+      force: true
+      path: tmux.conf
 - shell:
     - [git submodule update --init --recursive, Installings submodules]
