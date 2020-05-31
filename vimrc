@@ -13,7 +13,7 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'https://github.com/preservim/nerdtree'
-Plug 'https://gitbub.com/junegunn/goyo.vim'
+"Plug 'https://gitbub.com/junegunn/goyo.vim'
 " Plug 'https://github.com/vim-latex/vim-latex'
 call plug#end()
 
