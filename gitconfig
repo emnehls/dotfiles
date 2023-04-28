@@ -1,4 +1,5 @@
 [user]
+    name = emnehls
 	email = emnehls@protonmail.com
 [core]
 	editor = vim 
