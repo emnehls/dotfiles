@@ -19,6 +19,9 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 
+# alias for connecting to msvpn.wusm.wustl.edu
+alias wusmvpn="sudo openconnect -u emnehls@wustl.edu msvpn.wusm.wustl.edu"
+
 ## Working with Python venv
 alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
 alias de='deactivate'
