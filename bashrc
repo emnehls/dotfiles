@@ -77,6 +77,7 @@
 #		PS1='\u@\h \w \$ '
 #	fi
 #fi
+PS1='\u@\h \w \$ '
 #
 #unset use_color safe_term match_lhs sh
 #
@@ -123,8 +124,7 @@
 #}
 
 # My custom aliases
-alias rstudio="rstudio-bin"
-alias v="vim"
+alias v="nvim"
 alias cp="cp -i"                          # confirm before overwriting something
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
@@ -134,9 +134,16 @@ alias grep='grep --colour=auto'
 alias egrep='egrep --colour=auto'
 alias fgrep='fgrep --colour=auto'
 
+## Working with Python venv
+alias ae='deactivate &> /dev/null; source ./venv/bin/activate'
+alias de='deactivate'
+
 ## My custom settings
 ## set the type mode to vi
-#set -o vi
+set -o vi
 
 ## My custom paths
-export PATH="${PATH}:${HOME}/src/scripts:${HOME}/src/platform-tools"
+#export PATH="${PATH}:${HOME}/src/scripts:${HOME}/src/platform-tools"
+export GOPATH=$HOME
+
+#[ -f /opt/miniconda3/etc/profile.d/conda.sh ] && source /opt/miniconda3/etc/profile.d/conda.sh

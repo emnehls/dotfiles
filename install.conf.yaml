@@ -5,9 +5,9 @@
 - clean: ['~']
 
 - link:
-    ~/.vimrc: 
+    ~/.config/nvim: 
       force: true
-      path: vimrc
+      path: nvim 
     ~/.bashrc: 
       force: true
       path: bashrc

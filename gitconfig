@@ -1,5 +1,5 @@
 [user]
-	name = emnehls_home
+	name = emnehls
 	email = emnehls@protonmail.com
 [core]
 	editor = vim 
@@ -12,3 +12,5 @@
 	branch = auto
 [github]
 	name = emnehls
+[credential]
+	helper = cache --timeout=3600
