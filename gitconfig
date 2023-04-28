@@ -1,5 +1,4 @@
 [user]
-	name = emnehls_home
 	email = emnehls@protonmail.com
 [core]
 	editor = vim 
@@ -14,3 +13,5 @@
 	name = emnehls
 [credential]
 	helper = cache --timeout=3600
+[include]
+    path = $HOME/.gitconfig_local
