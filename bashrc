@@ -35,3 +35,6 @@ fi
 #export PATH="${PATH}:${HOME}/src/scripts:${HOME}/src/platform-tools"
 export GOPATH=$HOME
 
+if [ -d /usr/local/texlive/2023/bin/x86_64-linux ]; then
+    export PATH=$PATH:/usr/local/texlive/2023/bin/x86_64-linux
+fi
