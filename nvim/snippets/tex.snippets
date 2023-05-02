@@ -1,0 +1,12 @@
+snippet fig "Figure for thesis"
+	\\begin{figure}[p]
+		\\centering
+		%\phantomlabel{fig:induction}
+		\\includegraphics[width=\linewidth]{figures/${1}}
+		\\caption[${2}.]{%
+			${3}
+			%\subref{fig:induction} 
+		}
+		\\label{fig:${4}}
+	\\end{figure}
+	${0}

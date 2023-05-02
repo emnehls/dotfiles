@@ -16,7 +16,7 @@ set path+=** "Provides tab-completion for searching recusively into subfolders
 set wildmenu "Display all matching files when we tab complete
 set number "shows absolute line number of current line
 set relativenumber "shows relative line numbers
-syntax on "enable syntax coloring
+syntax enable "enable syntax coloring
 set incsearch " Enable searching as you type, rather than waiting till you press enter.
 set hls "set highlight searches - type :noh to stop it from highlighting last search
 
@@ -99,3 +99,8 @@ let g:vimwiki_global_ext = 0 " to restrict vimiwiki to just the path in lists
 
 colorscheme dracula "colorscheme
 
+"For deoplete with vimtex
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#var('omni', 'input_patterns', {
+      \ 'tex': g:vimtex#re#deoplete
+      \})
