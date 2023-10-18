@@ -38,6 +38,7 @@ set splitright
 set foldmethod=indent
 set foldlevel=99
 
+
 " ========= KEYMAPPINGS =========
 "remaping local leader and leader - this may take some time to get used to
 let mapleader = ";"
@@ -98,6 +99,10 @@ let g:vimwiki_list = [{'path': '~/dox/vimwiki/', 'syntax': 'markdown', 'ext': '.
 let g:vimwiki_global_ext = 0 " to restrict vimiwiki to just the path in lists
 
 colorscheme dracula "colorscheme
+
+" Window transparency
+hi Normal guibg=NONE ctermbg=NONE
+
 
 "For deoplete with vimtex
 let g:deoplete#enable_at_startup = 1
