@@ -95,7 +95,7 @@ au BufNewFile,BufRead *.js, *.html, *.css
 
 "vimwiki directory setting
 
-let g:vimwiki_list = [{'path': '~/dox/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path': '~/Documents/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_global_ext = 0 " to restrict vimiwiki to just the path in lists
 
 colorscheme dracula "colorscheme
