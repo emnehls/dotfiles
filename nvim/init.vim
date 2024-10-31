@@ -63,7 +63,7 @@ let g:tex_flavor='latex'
 
 "some commands to allow me to make latex and R markdown files in vim
 "spellcheck to leader (;) s
-map <leader>s :setlocal spell! spelling=en_us<CR>
+map <leader>s :setlocal spell! spelllang=en_us<CR>
 "compiler
 map <leader>c :w! \| !compiler <c-r>%<CR>
 map <leader>p :!opout <c-r>%<CR><CR>
